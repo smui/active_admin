@@ -102,7 +102,7 @@ module ActiveAdmin
     def prepare!
       remove_active_admin_load_paths_from_rails_autoload_and_eager_load
       attach_reloader
-      generate_stylesheets
+      # generate_stylesheets # SMUI - disabled because we don't need to regenerate the stylesheet every time
     end
 
     # Registers a brand new configuration for the given resource.
